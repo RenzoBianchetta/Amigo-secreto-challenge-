@@ -17,18 +17,13 @@ if(nombre==0){
 
 
     function mostrarAmigos() {
-      // 1. Obtener el elemento de la lista
       const lista = document.getElementById("listaAmigos");
       
-      // 2. Limpiar la lista existente
       lista.innerHTML = "";
-      
-      // 3. Iterar sobre el arreglo
       for (let i = 0; i < nombres.length; i++) {
-        // 4. Crear <li> para cada amigo
         const li = document.createElement("li");
-        li.textContent = nombres[i]; // asignar el nombre
-        lista.appendChild(li); // agregar a la lista
+        li.textContent = nombres[i]; 
+        lista.appendChild(li); 
       }
     }
 
@@ -44,4 +39,5 @@ if(nombres==0){
 
 
 }
+
 }
